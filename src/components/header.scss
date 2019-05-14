@@ -1,0 +1,120 @@
+@keyframes glitch-anim {
+  $steps: 10;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+    }
+  }
+}
+
+header {
+  background: black;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding-top: 1rem;
+}
+
+.logo-img {
+  width: 120px;
+  height: 145px;
+  margin-bottom: 1rem;
+}
+
+.nav {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  .nav-item {
+    display: inline-block;
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+
+      .nav-text {
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        z-index: 1;
+
+        &:before,
+        &:after {
+          content: attr(data-text);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        &:before {
+          color: #ffffff;
+          z-index: -1;
+        }
+
+        &:after {
+          color: #000000;
+          z-index: -2;
+        }
+
+        &:hover {
+          &:before {
+            animation: glitchy 0.3s ease 0.3s infinite;
+          }
+
+          &:after {
+            animation: glitchy 0.3s ease infinite reverse;
+          }
+        }
+      }
+
+      @keyframes glitchy {
+        0% {
+          transform: translate(-2px, 2px);
+        }
+        25% {
+          transform: translate(-2px, -2px);
+        }
+        50% {
+          transform: translate(2px, 2px);
+        }
+        75% {
+          transform: translate(2px, -2px);
+        }
+        100% {
+          transform: translate(-2px, 2px);
+        }
+      }
+    }
+  }
+}
+
+@keyframes line-glitchy {
+  0% {
+    transform: translate(-1px, 1px);
+  }
+  25% {
+    transform: translate(-1px, -1px);
+  }
+  50% {
+    transform: translate(1px, 1px);
+  }
+  75% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(-1px, 1px);
+  }
+}

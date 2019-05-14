@@ -1,0 +1,31 @@
+.koncerty-page {
+  background-color: #fff;
+  height: 100%;
+
+  .content {
+    width: 960px;
+    margin: 1rem auto;
+  }
+}
+
+.koncerty-list {
+  font-family: Arial, Helvetica, sans-serif;
+
+  .event-column {
+    text-align: right;
+  }
+
+  .koncerty-event-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .koncerty-date,
+  .koncerty-page {
+    display: block;
+  }
+
+  .koncerty-date {
+    font-weight: bold;
+  }
+}
