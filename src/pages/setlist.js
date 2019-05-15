@@ -44,7 +44,7 @@ class SetListPage extends React.PureComponent {
 
             <div className="album-tabs">
               <button
-                className="tab-link"
+                className="tab-link active"
                 onClick={event => this.openAlbum(event, "system-of-a-down")}
               >
                 <img
@@ -105,7 +105,11 @@ class SetListPage extends React.PureComponent {
               </button>
             </div>
 
-            <div className="album-content" id="system-of-a-down">
+            <div
+              className="album-content"
+              id="system-of-a-down"
+              style={{ display: "block" }}
+            >
               <ul className="song-list">
                 <li>Suite Pee</li>
                 <li>Sugar</li>
