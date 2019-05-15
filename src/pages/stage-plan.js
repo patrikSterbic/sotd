@@ -5,6 +5,8 @@ import SEO from "../components/seo";
 
 import "./stage-plan.scss";
 
+import StageImage from "../images/stageplan.jpg";
+
 const StagePlanPage = () => (
   <Layout>
     <SEO
@@ -20,7 +22,7 @@ const StagePlanPage = () => (
       <div className="content">
         <h1>Stage Plán</h1>
 
-        <img src="https://via.placeholder.com/960x600" alt="placeholder" />
+        <img src={StageImage} alt="Stage" width="960" />
       </div>
     </div>
   </Layout>
