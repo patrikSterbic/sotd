@@ -33,7 +33,7 @@ const KontaktyPage = () => (
               </li>
               <li>+420 604 308 927</li>
               <li>
-                <a href="#mailgo" data-address="sotdtb" data-domain="gmail.com">
+                <a className="email" href="mailto:sotdb@gmail.com">
                   sotdtb@gmail.com
                 </a>
               </li>
