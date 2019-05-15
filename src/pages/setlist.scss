@@ -6,94 +6,60 @@
     width: 960px;
     margin: 1rem auto;
 
-    .album-list {
-      .col {
-        display: inline-block;
-        vertical-align: top;
-        width: 50%;
-      }
-      .album {
-        margin-bottom: 2rem;
+    .album-tabs {
+      overflow: hidden;
+      border: 1px solid #000;
+      background-color: #000;
 
-        .album-title {
-          display: flex;
-          align-items: flex-end;
-          margin-bottom: 1rem;
+      .tab-link {
+        background-color: #000;
+        color: #fff;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        width: 20%;
+        display: flex;
+        justify-content: space-evenly;
 
-          h2 {
-            margin-bottom: 0;
-            margin-left: 1rem;
-          }
+        &:hover {
+          background-color: #fff;
+          color: #000;
         }
 
-        .song-list {
-          margin-left: 0;
-
-          li {
-            list-style-type: none;
-            font-size: 20px;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-          }
+        &.active {
+          background-color: #fff;
+          color: #000;
         }
       }
     }
-  }
-}
 
-.album-tabs {
-  overflow: hidden;
-  border: 1px solid #000;
-  background-color: #000;
+    .album-content {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #000;
+      border-top: none;
 
-  .tab-link {
-    background-color: #000;
-    color: #fff;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+      .song-list {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    img {
-      margin-right: 3px;
-    }
-
-    &:hover {
-      background-color: #fff;
-      color: #000;
-    }
-
-    &.active {
-      background-color: #fff;
-      color: #000;
-    }
-  }
-}
-
-.album-content {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #000;
-  border-top: none;
-
-  .song-list {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    li {
-      list-style-type: none;
-      font-size: 20px;
-      font-weight: bold;
-      font-family: Arial, Helvetica, sans-serif;
+        li {
+          list-style-type: none;
+          font-size: 20px;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
     }
   }
 }
