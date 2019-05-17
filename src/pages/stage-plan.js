@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 
 import "./stage-plan.scss";
 
-import StageImage from "../images/stageplan.jpg";
+import StageImage from "../images/stage_plan.png";
 
 const StagePlanPage = () => (
   <Layout>

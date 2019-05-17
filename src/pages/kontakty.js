@@ -5,10 +5,6 @@ import SEO from "../components/seo";
 
 import "./kontakty.scss";
 
-import FacebookIcon from "../images/facebook_square_black.png";
-import YoutubeIcon from "../images/youtube_black.png";
-import BandzoneIcon from "../images/bandzone_black.png";
-
 const KontaktyPage = () => (
   <Layout>
     <SEO
@@ -61,41 +57,6 @@ const KontaktyPage = () => (
           </div>
         </div>
       </div>
-
-      <footer className="footer">
-        <div className="social-icons">
-          <a
-            href="https://www.facebook.com/sotdtb/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={FacebookIcon}
-              alt="Facebook Icon"
-              className="social-icon"
-            />
-          </a>
-
-          <a
-            href="https://www.youtube.com/channel/UCGSgHxvGeQDAnRMP9xrxqZw"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={YoutubeIcon} alt="Youtube Icon" className="social-icon" />
-          </a>
-          <a
-            href="https://bandzone.cz/sotd"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={BandzoneIcon}
-              alt="Bandzone Icon"
-              className="social-icon"
-            />
-          </a>
-        </div>
-      </footer>
     </div>
   </Layout>
 );
