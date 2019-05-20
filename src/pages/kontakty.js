@@ -66,7 +66,7 @@ class KontaktyPage extends React.PureComponent {
                   </li>
                 </ul>
               </div>
-              <div className="col-3">
+              {/* <div className="col-3">
                 <h2>Napište nám</h2>
                 <form
                   method="POST"
@@ -94,7 +94,7 @@ class KontaktyPage extends React.PureComponent {
                     <span className="inner-text">Odeslat</span>
                   </button>
                 </form>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
