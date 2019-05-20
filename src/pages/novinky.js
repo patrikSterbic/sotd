@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import "./novinky.scss";
+import FacebookIcon from "../images/facebook_square_black.png";
 
 const NovinkyPage = () => (
   <Layout>
@@ -22,18 +23,19 @@ const NovinkyPage = () => (
 
         <div className="news-list">
           <div className="news-item">
-            <span className="news-date">14.5.2019</span>
-            <h2 className="news-title">Učíme se nové songy</h2>
-            <button className="news-button">
-              <span className="link-inner">Více</span>
-            </button>
-          </div>
-          <div className="news-item">
-            <span className="news-date">13.5.2019</span>
-            <h2 className="news-title">Spouštíme web!</h2>
-            <button className="news-button">
-              <span className="link-inner">Více</span>
-            </button>
+            <span className="news-date">20.5.2019</span>
+            <h2 className="news-title">Koncert v Bamboo Club Zlín</h2>
+            <a
+              href="https://www.facebook.com/events/1264944820345601/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={FacebookIcon}
+                alt="facebook event"
+                className="koncerty-event-icon"
+              />
+            </a>
           </div>
         </div>
       </div>
