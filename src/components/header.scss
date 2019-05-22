@@ -50,7 +50,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: display 0s, opacity 0.5s linear;
     z-index: 1;
 
     .nav-item {
@@ -189,6 +188,7 @@ header {
     }
     .nav {
       display: none;
+      opacity: 0;
     }
     .nav.responsive {
       display: flex;
