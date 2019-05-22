@@ -22,7 +22,12 @@ const StagePlanPage = () => (
       <div className="content">
         <h1>Stage Plán</h1>
 
-        <img src={StageImage} alt="Stage" width="960" />
+        <img
+          className="stage-plan-img"
+          src={StageImage}
+          alt="Stage"
+          width="960"
+        />
       </div>
     </div>
   </Layout>

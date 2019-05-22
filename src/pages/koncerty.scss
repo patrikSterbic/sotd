@@ -1,15 +1,27 @@
 .koncerty-page {
   background-color: #fff;
-  height: 100%;
 
   .content {
-    width: 960px;
+    max-width: 960px;
     margin: 1rem auto;
   }
 }
 
 .koncerty-list {
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    background: #333;
+    color: white;
+    font-weight: bold;
+  }
+  td,
+  th {
+    padding: 6px;
+    text-align: left;
+  }
 
   .event-column {
     text-align: right;
@@ -27,5 +39,45 @@
 
   .koncerty-date {
     font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .koncerty-page {
+    padding: 1rem 2rem;
+
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    .koncerty-list {
+      tr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      tr {
+        border-bottom: 1px solid #ccc;
+      }
+
+      td {
+        /* Behave  like a "row" */
+        border: none;
+
+        text-align: left;
+      }
+
+      td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+    }
   }
 }

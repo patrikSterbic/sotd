@@ -1,12 +1,8 @@
 .kontakty-page {
   background-color: #fff;
-  height: 78vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
   .content {
-    width: 960px;
+    max-width: 960px;
     margin: 1rem auto;
 
     .row {
@@ -109,6 +105,16 @@
           }
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .kontakty-page {
+    padding: 1rem 2rem;
+
+    h1 {
+      font-size: 1.7rem;
     }
   }
 }

@@ -23,26 +23,28 @@ const KoncertyPage = () => (
         <h1>Koncerty</h1>
 
         <table className="koncerty-list">
-          <tr>
-            <td>
-              <span className="koncerty-date">25.5.2019</span>
-              <span className="koncerty-place">Bamboo</span>
-            </td>
-            <td>Zlín</td>
-            <td className="event-column">
-              <a
-                href="https://www.facebook.com/events/1264944820345601/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={FacebookIcon}
-                  alt="facebook event"
-                  className="koncerty-event-icon"
-                />
-              </a>
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>
+                <span className="koncerty-date">25.5.2019</span>
+                <span className="koncerty-place">Bamboo</span>
+              </td>
+              <td className="event-city">Zlín</td>
+              <td className="event-column">
+                <a
+                  href="https://www.facebook.com/events/1264944820345601/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={FacebookIcon}
+                    alt="facebook event"
+                    className="koncerty-event-icon"
+                  />
+                </a>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>

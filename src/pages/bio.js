@@ -36,7 +36,7 @@ const BioPage = () => {
             přiblížit průřez tvorbou kapely, jež k nám moc často bohužel
             nezavítá a jejichž tvorbu znají lidé po celém světě
           </p>
-          <img src={BioImage} alt="Bio" width="960" id="target" />
+          <img className="bio-img" src={BioImage} alt="Bio" id="target" />
         </div>
       </div>
     </Layout>

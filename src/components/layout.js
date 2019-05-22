@@ -18,10 +18,10 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <div className="app">
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
-      </>
+      </div>
     )}
   />
 );

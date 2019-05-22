@@ -618,3 +618,10 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+// ************************ CUSTOM STYLES ***************
+.app {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 38vh 62vh;
+}

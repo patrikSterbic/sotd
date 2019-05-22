@@ -1,6 +1,5 @@
 .setlist-page {
   background-color: #fff;
-  height: 100%;
 
   .content {
     width: 960px;
@@ -58,6 +57,37 @@
           font-size: 20px;
           font-weight: bold;
           font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .setlist-page {
+    padding: 1rem 2rem;
+
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    .content {
+      width: 100%;
+
+      .setlist {
+        .album-tabs {
+          display: flex;
+          flex-direction: column;
+
+          .tab-link {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+            .album-name {
+              width: 220px;
+            }
+          }
         }
       }
     }
