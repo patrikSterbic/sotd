@@ -29,19 +29,14 @@ class Header extends React.PureComponent {
   render() {
     return (
       <header>
-        {window.location.pathname !== "/" && (
-          <div
-            className={
-              this.state.showMenu ? "burger-menu change" : "burger-menu"
-            }
-            onClick={this.handleOpenMenu}
-          >
-            <div className="line-1" />
-            <div className="line-2" />
-            <div className="line-3" />
-          </div>
-        )}
-
+        <div
+          className={this.state.showMenu ? "burger-menu change" : "burger-menu"}
+          onClick={this.handleOpenMenu}
+        >
+          <div className="line-1" />
+          <div className="line-2" />
+          <div className="line-3" />
+        </div>
         <div className="logo">
           <Link to="/">
             <img src={LogoImg} alt="logo" className="logo-img" />
