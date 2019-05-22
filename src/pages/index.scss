@@ -84,6 +84,22 @@
   }
 }
 
+@media only screen and (max-width: 320px) {
+  .main-page {
+    .mobile-footer {
+      .social-icons {
+        a {
+          .social-icon {
+            width: 28px;
+            height: 28px;
+            margin: 0 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 @keyframes glitchy {
   0% {
     transform: translate(-2px, 2px);
