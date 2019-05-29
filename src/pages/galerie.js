@@ -26,7 +26,7 @@ const GaleriePage = () => (
             title="První Live Koncert"
             width="960"
             height="480"
-            src="https://www.youtube.com/embed/dzc8l6bFi4s?wmode=transparent"
+            src="https://www.youtube.com/embed/9vfSlI6hovY"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
