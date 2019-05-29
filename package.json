@@ -1,15 +1,16 @@
 {
   "name": "system-of-the-down-tribute-band",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "System of The Down Webpage",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "sotd",
   "dependencies": {
     "axios": "^0.18.0",
     "dotenv": "^8.0.0",
     "gatsby": "^2.4.3",
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-favicon": "^3.1.6",
+    "gatsby-plugin-google-analytics": "^2.0.20",
     "gatsby-plugin-mailchimp": "^5.1.0",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.0",
@@ -19,6 +20,7 @@
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-transformer-sharp": "^2.1.19",
     "glitch-canvas": "^1.1.6",
+    "jquery": "^3.4.1",
     "mailgo": "^0.3.0",
     "node-sass": "^4.12.0",
     "nodemailer": "^6.1.1",
@@ -29,7 +31,8 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.0",
+    "ftp-deploy": "^2.3.3"
   },
   "keywords": [
     "gatsby"
@@ -40,8 +43,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",
