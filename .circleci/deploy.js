@@ -2,7 +2,7 @@ const FtpDeploy = require("ftp-deploy");
 const ftpDeploy = new FtpDeploy();
 
 const config = {
-  username: process.env.FTPUSERNAME,
+  user: process.env.FTPUSERNAME,
   password: process.env.FTPPASS,
   host: process.env.FTPHOST,
   port: 21,
