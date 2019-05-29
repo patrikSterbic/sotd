@@ -8,6 +8,7 @@ import LogoImg from "../images/logo.png";
 import FacebookIcon from "../images/facebook_square_white.png";
 import YoutubeIcon from "../images/youtube_white.png";
 import BandzoneIcon from "../images/bandzone_white.png";
+import InstagramIcon from "../images/instagram_white.png";
 
 class Header extends React.PureComponent {
   state = {
@@ -116,6 +117,17 @@ class Header extends React.PureComponent {
               <img
                 src={YoutubeIcon}
                 alt="Youtube Icon"
+                className="social-icon"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/sotdtb/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={InstagramIcon}
+                alt="Instagram Icon"
                 className="social-icon"
               />
             </a>
