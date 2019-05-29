@@ -1,9 +1,9 @@
 {
   "name": "system-of-the-down-tribute-band",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "System of The Down Webpage",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "sotd",
   "dependencies": {
     "axios": "^0.18.0",
     "dotenv": "^8.0.0",
@@ -31,7 +31,8 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.0",
+    "ftp-deploy": "^2.3.3"
   },
   "keywords": [
     "gatsby"
@@ -42,8 +43,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",
