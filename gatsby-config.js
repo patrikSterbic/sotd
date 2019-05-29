@@ -57,5 +57,11 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-140693082-1",
+      },
+    },
   ],
 };

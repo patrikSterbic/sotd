@@ -21,6 +21,7 @@ const IndexPage = () => (
       ]}
     />
     <div className="main-page">
+      <div className="glitch-img" />
       <footer className="mobile-footer" style={{ display: "none" }}>
         <div className="social-icons">
           <a
