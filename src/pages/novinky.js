@@ -23,10 +23,10 @@ const NovinkyPage = () => (
 
         <div className="news-list">
           <div className="news-item">
-            <span className="news-date">20.5.2019</span>
-            <h2 className="news-title">Koncert v Bamboo Club Zlín</h2>
+            <span className="news-date">2.6.2019</span>
+            <h2 className="news-title">Chystáme turné po Moravě!</h2>
             <a
-              href="https://www.facebook.com/events/1264944820345601/"
+              href="https://www.facebook.com/sotdtb/photos/a.653155218448551/708863236211082/?type=3&theater"
               target="_blank"
               rel="noopener noreferrer"
             >
