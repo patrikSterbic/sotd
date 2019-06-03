@@ -20,6 +20,14 @@
   td,
   th {
     padding: 6px;
+  }
+
+  .event-club {
+    width: 400px;
+    max-width: 400px;
+  }
+
+  .event-city {
     text-align: left;
   }
 
@@ -64,8 +72,10 @@
       td {
         /* Behave  like a "row" */
         border: none;
+      }
 
-        text-align: left;
+      .event-city {
+        text-align: right;
       }
 
       td:before {

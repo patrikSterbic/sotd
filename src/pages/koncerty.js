@@ -26,7 +26,7 @@ const KoncertyPage = () => (
         <table className="koncerty-list">
           <tbody>
             <tr>
-              <td>
+              <td className="event-club">
                 <span className="koncerty-date">31.8.2019</span>
                 <span className="koncerty-place">Kytary In Majetin</span>
               </td>
@@ -46,7 +46,7 @@ const KoncertyPage = () => (
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="event-club">
                 <span className="koncerty-date">14.9.2019</span>
                 <span className="koncerty-place">Bunkr Club</span>
               </td>
@@ -62,7 +62,7 @@ const KoncertyPage = () => (
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="event-club">
                 <span className="koncerty-date">21.9.2019</span>
                 <span className="koncerty-place">Klub Vrátnice</span>
               </td>
@@ -78,7 +78,7 @@ const KoncertyPage = () => (
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="event-club">
                 <span className="koncerty-date">12.10.2019</span>
                 <span className="koncerty-place">BARRÁK Music club</span>
               </td>
@@ -94,7 +94,7 @@ const KoncertyPage = () => (
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="event-club">
                 <span className="koncerty-date">26.10.2019</span>
                 <span className="koncerty-place">15 Minut Music club</span>
               </td>
@@ -110,7 +110,7 @@ const KoncertyPage = () => (
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="event-club">
                 <span className="koncerty-date">16.11.2019</span>
                 <span className="koncerty-place">M13 Klub</span>
               </td>
@@ -126,7 +126,7 @@ const KoncertyPage = () => (
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="event-club">
                 <span className="koncerty-date">23.11.2019</span>
                 <span className="koncerty-place">Club Nautilus</span>
               </td>
@@ -149,7 +149,7 @@ const KoncertyPage = () => (
         <table className="koncerty-list">
           <tbody>
             <tr>
-              <td>
+              <td className="event-club">
                 <span className="koncerty-date">22.3.2019</span>
                 <span className="koncerty-place">Bamboo Club</span>
               </td>
@@ -169,7 +169,7 @@ const KoncertyPage = () => (
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="event-club">
                 <span className="koncerty-date">25.5.2019</span>
                 <span className="koncerty-place">Bamboo Club</span>
               </td>
