@@ -21,9 +21,10 @@ const KoncertyPage = () => (
     <div className="koncerty-page">
       <div className="content">
         <h1>Koncerty</h1>
+        <h2>Plánované</h2>
+
         <table className="koncerty-list">
           <tbody>
-            <h2>Plánované</h2>
             <tr>
               <td>
                 <span className="koncerty-date">31.8.2019</span>
@@ -140,7 +141,13 @@ const KoncertyPage = () => (
                 </a>
               </td>
             </tr>
-            <h2>Odehrané</h2>
+          </tbody>
+        </table>
+
+        <h2>Odehrané</h2>
+
+        <table className="koncerty-list">
+          <tbody>
             <tr>
               <td>
                 <span className="koncerty-date">22.3.2019</span>
