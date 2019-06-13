@@ -33,6 +33,15 @@
 
   .event-column {
     text-align: right;
+
+    a {
+      vertical-align: -9px;
+    }
+
+    .smsticket-ibutton {
+      vertical-align: -1rem;
+      margin-right: 1rem;
+    }
   }
 
   .koncerty-event-icon {
