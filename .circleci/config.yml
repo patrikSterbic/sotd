@@ -7,6 +7,7 @@ jobs:
       - checkout
       - run: npm install
       - run: npm run build
+      - run: cp .htaccess /public/.htaccess
       - run: node .circleci/deploy.js
       - run: echo "WE'RE ONLINE"
 
