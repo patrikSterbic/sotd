@@ -8,8 +8,8 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: cp .htaccess public/.htaccess
+      - run: ls -la public/
       - run: node .circleci/deploy.js
-      - run: ls -la
       - run: echo "WE'RE ONLINE"
 
 workflows:
