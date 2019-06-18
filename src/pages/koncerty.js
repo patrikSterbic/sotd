@@ -163,6 +163,38 @@ class KoncertyPage extends React.PureComponent {
                     </a>
                   </td>
                 </tr>
+                <tr>
+                  <td className="event-club">
+                    <span className="koncerty-date">14.12.2019</span>
+                    <span className="koncerty-place">Bamboo Club</span>
+                  </td>
+                  <td className="event-city">Zlín</td>
+                  <td className="event-column">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="event-club">
+                    <span className="koncerty-date">28.12.2019</span>
+                    <span className="koncerty-place">Klub MÍR</span>
+                  </td>
+                  <td className="event-city">Uherské Hradiště</td>
+                  <td className="event-column">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
               </tbody>
             </table>
 
