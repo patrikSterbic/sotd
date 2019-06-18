@@ -9,6 +9,7 @@ jobs:
       - run: npm run build
       - run: cp .htaccess public/.htaccess
       - run: node .circleci/deploy.js
+      - run: ls -la
       - run: echo "WE'RE ONLINE"
 
 workflows:
