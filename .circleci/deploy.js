@@ -8,7 +8,8 @@ const config = {
   port: 21,
   localRoot: __dirname + "/../public/",
   remoteRoot: "/www",
-  include: ["*"],
+  // include: ["*", ".htaccess"],
+  deleteRemote: true,
 };
 
 ftpDeploy.deploy(config, function(err) {

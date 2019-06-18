@@ -37,11 +37,14 @@ class KoncertyPage extends React.PureComponent {
             <table className="koncerty-list">
               <tbody>
                 <tr>
-                  <td className="event-club">
-                    <span className="koncerty-date">31.8.2019</span>
-                    <span className="koncerty-place">Kytary In Majetin</span>
-                  </td>
-                  <td className="event-city">Majetín</td>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">31.8.2019</span>
+                      <span className="koncerty-place">Kytary In Majetin</span>
+                    </td>
+                    <td className="event-city">Majetín</td>
+                  </div>
+
                   <td className="event-column">
                     <a
                       href="https://www.facebook.com/events/293982631476108/"
@@ -57,24 +60,26 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                 </tr>
                 <tr>
-                  <td className="event-club">
-                    <span className="koncerty-date">14.9.2019</span>
-                    <span className="koncerty-place">Bunkr Club</span>
-                  </td>
-                  <td className="event-city">Vsetín</td>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">14.9.2019</span>
+                      <span className="koncerty-place">Bunkr Club</span>
+                    </td>
+                    <td className="event-city">Vsetín</td>
+                  </div>
                   <td className="event-column">
                     <a
                       title="Předprodej akce"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="smsticket-ibutton"
+                      className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17287-system-of-the-down-tribute-bunkr-club?utm_medium=anchor"
                     />
                     <a
                       href="https://www.facebook.com/events/430268084420722/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="fb-event"
+                      className="fb-event"
                     >
                       <img
                         src={FacebookIcon}
@@ -85,24 +90,26 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                 </tr>
                 <tr>
-                  <td className="event-club">
-                    <span className="koncerty-date">21.9.2019</span>
-                    <span className="koncerty-place">Klub Vrátnice</span>
-                  </td>
-                  <td className="event-city">Rožnov pod Radhoštěm</td>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">21.9.2019</span>
+                      <span className="koncerty-place">Klub Vrátnice</span>
+                    </td>
+                    <td className="event-city">Rožnov pod Radhoštěm</td>
+                  </div>
                   <td className="event-column">
                     <a
                       title="Předprodej akce"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="smsticket-ibutton"
+                      className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17339-system-of-the-down-tribute?utm_medium=anchor"
                     />
                     <a
                       href="https://www.facebook.com/events/2946324898741583/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="fb-event"
+                      className="fb-event"
                     >
                       <img
                         src={FacebookIcon}
@@ -113,24 +120,26 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                 </tr>
                 <tr>
-                  <td className="event-club">
-                    <span className="koncerty-date">12.10.2019</span>
-                    <span className="koncerty-place">BARRÁK Music club</span>
-                  </td>
-                  <td className="event-city">Ostrava</td>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">12.10.2019</span>
+                      <span className="koncerty-place">BARRÁK Music club</span>
+                    </td>
+                    <td className="event-city">Ostrava</td>
+                  </div>
                   <td className="event-column">
                     <a
                       title="Předprodej akce"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="smsticket-ibutton"
+                      className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17341-system-of-the-down-tribute?utm_medium=anchor"
                     />
                     <a
                       href="https://www.facebook.com/events/2403688729874487/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="fb-event"
+                      className="fb-event"
                     >
                       <img
                         src={FacebookIcon}
@@ -141,24 +150,28 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                 </tr>
                 <tr>
-                  <td className="event-club">
-                    <span className="koncerty-date">26.10.2019</span>
-                    <span className="koncerty-place">15 Minut Music club</span>
-                  </td>
-                  <td className="event-city">Olomouc</td>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">26.10.2019</span>
+                      <span className="koncerty-place">
+                        15 Minut Music club
+                      </span>
+                    </td>
+                    <td className="event-city">Olomouc</td>
+                  </div>
                   <td className="event-column">
                     <a
                       title="Předprodej akce"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="smsticket-ibutton"
+                      className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17342-system-of-the-down-tribute?utm_medium=anchor"
                     />
                     <a
                       href="https://www.facebook.com/events/2237866436462898/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="fb-event"
+                      className="fb-event"
                     >
                       <img
                         src={FacebookIcon}
@@ -169,24 +182,26 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                 </tr>
                 <tr>
-                  <td className="event-club">
-                    <span className="koncerty-date">16.11.2019</span>
-                    <span className="koncerty-place">M13 Klub</span>
-                  </td>
-                  <td className="event-city">Brno</td>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">16.11.2019</span>
+                      <span className="koncerty-place">M13 Klub</span>
+                    </td>
+                    <td className="event-city">Brno</td>
+                  </div>
                   <td className="event-column">
                     <a
                       title="Předprodej akce"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="smsticket-ibutton"
+                      className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17343-system-of-the-down-tribute?utm_medium=anchor"
                     />
                     <a
                       href="https://www.facebook.com/events/532808890588180/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="fb-event"
+                      className="fb-event"
                     >
                       <img
                         src={FacebookIcon}
@@ -197,24 +212,26 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                 </tr>
                 <tr>
-                  <td className="event-club">
-                    <span className="koncerty-date">23.11.2019</span>
-                    <span className="koncerty-place">Club Nautilus</span>
-                  </td>
-                  <td className="event-city">Hodonín</td>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">23.11.2019</span>
+                      <span className="koncerty-place">Club Nautilus</span>
+                    </td>
+                    <td className="event-city">Hodonín</td>
+                  </div>
                   <td className="event-column">
                     <a
                       title="Předprodej akce"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="smsticket-ibutton"
+                      className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17344-system-of-the-down-tribute?utm_medium=anchor"
                     />
                     <a
                       href="https://www.facebook.com/events/874181499599015/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="fb-event"
+                      className="fb-event"
                     >
                       <img
                         src={FacebookIcon}
@@ -225,24 +242,26 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                 </tr>
                 <tr>
-                  <td className="event-club">
-                    <span className="koncerty-date">14.12.2019</span>
-                    <span className="koncerty-place">Bamboo Club</span>
-                  </td>
-                  <td className="event-city">Zlín</td>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">14.12.2019</span>
+                      <span className="koncerty-place">Bamboo Club</span>
+                    </td>
+                    <td className="event-city">Zlín</td>
+                  </div>
                   <td className="event-column">
                     <a
                       title="Předprodej akce"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="smsticket-ibutton"
+                      className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17345-system-of-the-down-tribute?utm_medium=anchor"
                     />
                     <a
                       href="https://www.facebook.com/events/712214882583447/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="fb-event"
+                      className="fb-event"
                     >
                       <img
                         src={FacebookIcon}
@@ -253,24 +272,26 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                 </tr>
                 <tr>
-                  <td className="event-club">
-                    <span className="koncerty-date">28.12.2019</span>
-                    <span className="koncerty-place">Klub MÍR</span>
-                  </td>
-                  <td className="event-city">Uherské Hradiště</td>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">28.12.2019</span>
+                      <span className="koncerty-place">Klub MÍR</span>
+                    </td>
+                    <td className="event-city">Uherské Hradiště</td>
+                  </div>
                   <td className="event-column">
                     <a
                       title="Předprodej akce"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="smsticket-ibutton"
+                      className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17346-system-of-the-down-tribute?utm_medium=anchor"
                     />
                     <a
                       href="https://www.facebook.com/events/2308860679355564/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="fb-event"
+                      className="fb-event"
                     >
                       <img
                         src={FacebookIcon}
@@ -288,17 +309,19 @@ class KoncertyPage extends React.PureComponent {
             <table className="koncerty-list">
               <tbody>
                 <tr>
-                  <td className="event-club">
-                    <span className="koncerty-date">22.3.2019</span>
-                    <span className="koncerty-place">Bamboo Club</span>
-                  </td>
-                  <td className="event-city">Zlín</td>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">22.3.2019</span>
+                      <span className="koncerty-place">Bamboo Club</span>
+                    </td>
+                    <td className="event-city">Zlín</td>
+                  </div>
                   <td className="event-column">
                     <a
                       href="https://www.facebook.com/events/2687540827930256/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="fb-event"
+                      className="fb-event"
                     >
                       <img
                         src={FacebookIcon}
@@ -309,17 +332,19 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                 </tr>
                 <tr>
-                  <td className="event-club">
-                    <span className="koncerty-date">25.5.2019</span>
-                    <span className="koncerty-place">Bamboo Club</span>
-                  </td>
-                  <td className="event-city">Zlín</td>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">25.5.2019</span>
+                      <span className="koncerty-place">Bamboo Club</span>
+                    </td>
+                    <td className="event-city">Zlín</td>
+                  </div>
                   <td className="event-column">
                     <a
                       href="https://www.facebook.com/events/1264944820345601/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="fb-event"
+                      className="fb-event"
                     >
                       <img
                         src={FacebookIcon}
