@@ -12,7 +12,7 @@ class KoncertyPage extends React.PureComponent {
     const po = document.createElement("script");
     po.async = true;
     po.src =
-      "https://www.smsticket.cz/static/scripts/widgets/SaleAnchorSmall.js";
+      "https://www.smsticket.cz/static/scripts/widgets/SaleAnchorMini.js";
     const s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(po, s);
   }
@@ -90,7 +90,18 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                   <td className="event-city">Rožnov pod Radhoštěm</td>
                   <td className="event-column">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                      title="Předprodej akce"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="smsticket-ibutton"
+                      href="https://www.smsticket.cz/vstupenky/17339-system-of-the-down-tribute?utm_medium=anchor"
+                    />
+                    <a
+                      href="https://www.facebook.com/events/2946324898741583/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img
                         src={FacebookIcon}
                         alt="facebook event"
@@ -106,7 +117,18 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                   <td className="event-city">Ostrava</td>
                   <td className="event-column">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                      title="Předprodej akce"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="smsticket-ibutton"
+                      href="https://www.smsticket.cz/vstupenky/17341-system-of-the-down-tribute?utm_medium=anchor"
+                    />
+                   <a
+                      href="https://www.facebook.com/events/2403688729874487/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img
                         src={FacebookIcon}
                         alt="facebook event"
@@ -122,7 +144,18 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                   <td className="event-city">Olomouc</td>
                   <td className="event-column">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                      title="Předprodej akce"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="smsticket-ibutton"
+                      href="https://www.smsticket.cz/vstupenky/17342-system-of-the-down-tribute?utm_medium=anchor"
+                    />
+                    <a
+                      href="https://www.facebook.com/events/2237866436462898/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img
                         src={FacebookIcon}
                         alt="facebook event"
@@ -138,7 +171,18 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                   <td className="event-city">Brno</td>
                   <td className="event-column">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                      title="Předprodej akce"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="smsticket-ibutton"
+                      href="https://www.smsticket.cz/vstupenky/17343-system-of-the-down-tribute?utm_medium=anchor"
+                    />
+                    <a
+                      href="https://www.facebook.com/events/532808890588180/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img
                         src={FacebookIcon}
                         alt="facebook event"
@@ -154,7 +198,18 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                   <td className="event-city">Hodonín</td>
                   <td className="event-column">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                      title="Předprodej akce"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="smsticket-ibutton"
+                      href="https://www.smsticket.cz/vstupenky/17344-system-of-the-down-tribute?utm_medium=anchor"
+                    />
+                    <a
+                      href="https://www.facebook.com/events/874181499599015/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img
                         src={FacebookIcon}
                         alt="facebook event"
@@ -170,7 +225,18 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                   <td className="event-city">Zlín</td>
                   <td className="event-column">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                      title="Předprodej akce"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="smsticket-ibutton"
+                      href="https://www.smsticket.cz/vstupenky/17345-system-of-the-down-tribute?utm_medium=anchor"
+                    />
+                    <a
+                      href="https://www.facebook.com/events/712214882583447/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img
                         src={FacebookIcon}
                         alt="facebook event"
@@ -186,7 +252,18 @@ class KoncertyPage extends React.PureComponent {
                   </td>
                   <td className="event-city">Uherské Hradiště</td>
                   <td className="event-column">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                      title="Předprodej akce"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="smsticket-ibutton"
+                      href="https://www.smsticket.cz/vstupenky/17346-system-of-the-down-tribute?utm_medium=anchor"
+                    />
+                    <a
+                      href="https://www.facebook.com/events/2308860679355564/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img
                         src={FacebookIcon}
                         alt="facebook event"
