@@ -34,9 +34,12 @@
   .event-column {
     text-align: right;
 
-
     .smsticket-ibutton {
       margin-right: 1rem;
+    }
+
+    .fb-event {
+      vertical-align: 2px;
     }
   }
 
@@ -57,7 +60,7 @@
 
 @media only screen and (max-width: 980px) {
   .koncerty-page {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
 
     h1 {
       font-size: 1.7rem;
@@ -66,12 +69,13 @@
     .koncerty-list {
       tr {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-      }
-
-      tr {
         border-bottom: 1px solid #ccc;
+
+        .koncerty-date {
+          text-align: center;
+        }
       }
 
       td {
@@ -84,7 +88,10 @@
       }
 
       .event-city {
-        text-align: right;
+        text-align: center;
+      }
+
+      .event-column {
       }
 
       td:before {
