@@ -9,7 +9,6 @@ const config = {
   localRoot: __dirname + "/../public/",
   remoteRoot: "/www",
   include: ["*", "**/*", ".htaccess"],
-  deleteRemote: true,
 };
 
 ftpDeploy.deploy(config, function(err) {
