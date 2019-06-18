@@ -8,7 +8,7 @@ const config = {
   port: 21,
   localRoot: __dirname + "/../public/",
   remoteRoot: "/www",
-  // include: ["*", ".htaccess"],
+  include: ["*", "**/*"],
   deleteRemote: true,
 };
 
