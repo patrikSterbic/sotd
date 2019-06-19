@@ -33,6 +33,7 @@
 
   .event-city {
     text-align: left;
+    vertical-align: bottom;
   }
 
   .event-column {
@@ -93,7 +94,7 @@
       }
 
       .event-city {
-        align-self: center;
+        align-self: flex-end;
         justify-self: flex-end;
       }
 

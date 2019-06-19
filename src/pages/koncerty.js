@@ -184,6 +184,36 @@ class KoncertyPage extends React.PureComponent {
                 <tr>
                   <div className="event-group">
                     <td className="event-club">
+                      <span className="koncerty-date">9.11.2019</span>
+                      <span className="koncerty-place">Klub Slady</span>
+                    </td>
+                    <td className="event-city">Kroměříž</td>
+                  </div>
+                  <td className="event-column">
+                    <a
+                      title="Předprodej akce"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="smsticket-ibutton"
+                      href="https://www.smsticket.cz/vstupenky/17366-system-of-the-down-tribute?utm_medium=anchor"
+                    />
+                    <a
+                      href="https://www.facebook.com/events/1146915855432877/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fb-event"
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <div className="event-group">
+                    <td className="event-club">
                       <span className="koncerty-date">16.11.2019</span>
                       <span className="koncerty-place">M13 Klub</span>
                     </td>
