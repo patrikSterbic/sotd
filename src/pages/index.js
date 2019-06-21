@@ -1,4 +1,5 @@
 import React from "react";
+import { injectIntl } from "gatsby-plugin-intl";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -10,10 +11,10 @@ import YoutubeIcon from "../images/youtube_white.png";
 import BandzoneIcon from "../images/bandzone_white.png";
 import InstagramIcon from "../images/instagram_white.png";
 
-const IndexPage = () => (
+const IndexPage = ({ intl }) => (
   <Layout>
     <SEO
-      title="Hlavní Stránka"
+      title={intl.formatMessage({ id: "hlavniStranka" })}
       keywords={[
         `sotd`,
         `system of the down`,
@@ -61,4 +62,4 @@ const IndexPage = () => (
   </Layout>
 );
 
-export default IndexPage;
+export default injectIntl(IndexPage);

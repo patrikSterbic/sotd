@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `System of the Down Tribute Band`,
-    description: `Website System of the Down Tribute Band .`,
+    description: `System of the Down Tribute Band .`,
     author: `@sotd`,
   },
   plugins: [
@@ -32,8 +32,8 @@ module.exports = {
       resolve: `gatsby-plugin-favicon`,
       options: {
         logo: "./src/favicon.png",
-        appName: "System of the Down",
-        appDescription: "Website for System of a Donw Tribute Band",
+        appName: "System of the Down Tribute Band",
+        appDescription: "System of a Donw Tribute Band",
         developerName: null,
         developerURL: null,
         dir: "auto",
@@ -55,6 +55,16 @@ module.exports = {
           yandex: false,
           windows: false,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        path: `${__dirname}/src/intl`,
+        languages: [`cs`, `en`],
+        defaultLanguage: `cs`,
+        redirect: true,
+        redirectComponent: require.resolve(`./src/components/redirect.js`),
       },
     },
     {

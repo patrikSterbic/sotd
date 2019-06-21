@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
+import { injectIntl } from "gatsby-plugin-intl";
 
 import Header from "./header";
 
@@ -44,4 +45,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default injectIntl(Layout);

@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -27,10 +28,12 @@ class SetListPage extends React.PureComponent {
   };
 
   render() {
+    const { intl } = this.props;
+
     return (
       <Layout>
         <SEO
-          title="Set List"
+          title={intl.formatMessage({ id: "setList" })}
           keywords={[
             `set list`,
             `system of the down`,
@@ -40,7 +43,9 @@ class SetListPage extends React.PureComponent {
         />
         <div className="setlist-page">
           <div className="content">
-            <h1>Set List</h1>
+            <h1>
+              <FormattedMessage id="setList" />
+            </h1>
 
             <div className="setlist">
               <div className="album-tabs">
@@ -145,6 +150,12 @@ class SetListPage extends React.PureComponent {
                   <li>Pictures</li>
                   <li>Fuck the System</li>
                   <li>Roulette</li>
+                  <li>
+                    Highway Song
+                    <span className="new-song">
+                      <FormattedMessage id="novinka" />
+                    </span>
+                  </li>
                 </ul>
               </div>
 
@@ -163,6 +174,12 @@ class SetListPage extends React.PureComponent {
                   <li>Radio/Video</li>
                   <li>Violent Pornography</li>
                   <li>Lost in Hollywood</li>
+                  <li>
+                    Cigaro
+                    <span className="new-song">
+                      <FormattedMessage id="novinka" />
+                    </span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -173,4 +190,4 @@ class SetListPage extends React.PureComponent {
   }
 }
 
-export default SetListPage;
+export default injectIntl(SetListPage);

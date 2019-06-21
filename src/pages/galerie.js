@@ -1,5 +1,6 @@
 import React from "react";
 import Lightbox from "react-image-lightbox";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 
 import "react-image-lightbox/style.css";
 
@@ -37,11 +38,12 @@ class GaleriePage extends React.PureComponent {
   };
 
   render() {
-    console.warn(this.state.photoSrc);
+    const { intl } = this.props;
+
     return (
       <Layout>
         <SEO
-          title="Galerie"
+          title={intl.formatMessage({ id: "galerie" })}
           keywords={[
             `galerie`,
             `system of the down`,
@@ -51,9 +53,13 @@ class GaleriePage extends React.PureComponent {
         />
         <div className="galerie-page" tabIndex="1">
           <div className="content">
-            <h1>Galerie</h1>
+            <h1>
+              <FormattedMessage id="galerie" />
+            </h1>
 
-            <h2>Videa</h2>
+            <h2>
+              <FormattedMessage id="videa" />
+            </h2>
             <div className="videos">
               <div className="video">
                 <iframe
@@ -105,20 +111,22 @@ class GaleriePage extends React.PureComponent {
               </div>
             </div>
 
-            <h2>Foto</h2>
+            <h2>
+              <FormattedMessage id="foto" />
+            </h2>
             <div className="photos">
               <img
                 onClick={this.openImage}
                 className="photo"
                 src={PhotoOne}
-                alt="test"
+                alt="First"
                 id="1"
                 height="314" // Ugly Hack
               />
               <img
                 className="photo"
                 src={PhotoTwo}
-                alt="test"
+                alt="Second"
                 onClick={this.openImage}
                 id="2"
                 height="314" // Ugly Hack
@@ -126,7 +134,7 @@ class GaleriePage extends React.PureComponent {
               <img
                 className="photo"
                 src={PhotoThree}
-                alt="test"
+                alt="Third"
                 onClick={this.openImage}
                 id="3"
                 height="314" // Ugly Hack
@@ -134,7 +142,7 @@ class GaleriePage extends React.PureComponent {
               <img
                 className="photo"
                 src={PhotoFour}
-                alt="test"
+                alt="Fourth"
                 onClick={this.openImage}
                 id="4"
                 height="314" // Ugly Hack
@@ -142,7 +150,7 @@ class GaleriePage extends React.PureComponent {
               <img
                 className="photo"
                 src={PhotoFive}
-                alt="test"
+                alt="Fifth"
                 onClick={this.openImage}
                 id="5"
                 height="314" // Ugly Hack
@@ -150,7 +158,7 @@ class GaleriePage extends React.PureComponent {
               <img
                 className="photo"
                 src={PhotoSix}
-                alt="test"
+                alt="Sixth"
                 onClick={this.openImage}
                 id="6"
                 height="314" // Ugly Hack
@@ -161,7 +169,7 @@ class GaleriePage extends React.PureComponent {
             <Lightbox
               mainSrc={this.state.currentPath}
               onCloseRequest={this.closeModal}
-              closeLabel="Zavřít"
+              closeLabel={this.props.intl.formatMessage({ id: "zavrit" })}
             />
           )}
         </div>
@@ -170,4 +178,4 @@ class GaleriePage extends React.PureComponent {
   }
 }
 
-export default GaleriePage;
+export default injectIntl(GaleriePage);

@@ -57,6 +57,16 @@
           font-size: 20px;
           font-weight: bold;
           font-family: Arial, Helvetica, sans-serif;
+
+          .new-song {
+            margin-left: 0.5em;
+            display: inline-block;
+            color: white;
+            background-color: brown;
+            padding: 0.2em 0.5em;
+            border-radius: 7px;
+            font-size: 15px;
+          }
         }
       }
     }

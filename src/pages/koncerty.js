@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -18,10 +19,11 @@ class KoncertyPage extends React.PureComponent {
   }
 
   render() {
+    const { intl } = this.props;
     return (
       <Layout>
         <SEO
-          title="Koncerty"
+          title={intl.formatMessage({ id: "koncerty" })}
           keywords={[
             `koncerty`,
             `system of the down`,
@@ -31,8 +33,12 @@ class KoncertyPage extends React.PureComponent {
         />
         <div className="koncerty-page">
           <div className="content">
-            <h1>Koncerty</h1>
-            <h2>Plánované</h2>
+            <h1>
+              <FormattedMessage id="koncerty" />
+            </h1>
+            <h2>
+              <FormattedMessage id="planovane" />
+            </h2>
 
             <table className="koncerty-list">
               <tbody>
@@ -74,7 +80,9 @@ class KoncertyPage extends React.PureComponent {
                       rel="noopener noreferrer"
                       className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17287-system-of-the-down-tribute-bunkr-club?utm_medium=anchor"
-                    />
+                    >
+                      SMSTICKET
+                    </a>
                     <a
                       href="https://www.facebook.com/events/430268084420722/"
                       target="_blank"
@@ -104,7 +112,9 @@ class KoncertyPage extends React.PureComponent {
                       rel="noopener noreferrer"
                       className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17339-system-of-the-down-tribute?utm_medium=anchor"
-                    />
+                    >
+                      SMSTICKET
+                    </a>
                     <a
                       href="https://www.facebook.com/events/2946324898741583/"
                       target="_blank"
@@ -134,7 +144,9 @@ class KoncertyPage extends React.PureComponent {
                       rel="noopener noreferrer"
                       className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17341-system-of-the-down-tribute?utm_medium=anchor"
-                    />
+                    >
+                      SMSTICKET
+                    </a>
                     <a
                       href="https://www.facebook.com/events/2403688729874487/"
                       target="_blank"
@@ -166,7 +178,9 @@ class KoncertyPage extends React.PureComponent {
                       rel="noopener noreferrer"
                       className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17342-system-of-the-down-tribute?utm_medium=anchor"
-                    />
+                    >
+                      SMSTICKET
+                    </a>
                     <a
                       href="https://www.facebook.com/events/2237866436462898/"
                       target="_blank"
@@ -196,7 +210,9 @@ class KoncertyPage extends React.PureComponent {
                       rel="noopener noreferrer"
                       className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17366-system-of-the-down-tribute?utm_medium=anchor"
-                    />
+                    >
+                      SMSTICKET
+                    </a>
                     <a
                       href="https://www.facebook.com/events/1146915855432877/"
                       target="_blank"
@@ -226,7 +242,9 @@ class KoncertyPage extends React.PureComponent {
                       rel="noopener noreferrer"
                       className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17343-system-of-the-down-tribute?utm_medium=anchor"
-                    />
+                    >
+                      SMSTICKET
+                    </a>
                     <a
                       href="https://www.facebook.com/events/532808890588180/"
                       target="_blank"
@@ -256,7 +274,9 @@ class KoncertyPage extends React.PureComponent {
                       rel="noopener noreferrer"
                       className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17344-system-of-the-down-tribute?utm_medium=anchor"
-                    />
+                    >
+                      SMSTICKET
+                    </a>
                     <a
                       href="https://www.facebook.com/events/874181499599015/"
                       target="_blank"
@@ -286,7 +306,9 @@ class KoncertyPage extends React.PureComponent {
                       rel="noopener noreferrer"
                       className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17345-system-of-the-down-tribute?utm_medium=anchor"
-                    />
+                    >
+                      SMSTICKET
+                    </a>
                     <a
                       href="https://www.facebook.com/events/712214882583447/"
                       target="_blank"
@@ -316,7 +338,9 @@ class KoncertyPage extends React.PureComponent {
                       rel="noopener noreferrer"
                       className="smsticket-ibutton"
                       href="https://www.smsticket.cz/vstupenky/17346-system-of-the-down-tribute?utm_medium=anchor"
-                    />
+                    >
+                      SMSTICKET
+                    </a>
                     <a
                       href="https://www.facebook.com/events/2308860679355564/"
                       target="_blank"
@@ -334,7 +358,9 @@ class KoncertyPage extends React.PureComponent {
               </tbody>
             </table>
 
-            <h2>Odehrané</h2>
+            <h2>
+              <FormattedMessage id="odehrane" />
+            </h2>
 
             <table className="koncerty-list">
               <tbody>
@@ -393,4 +419,4 @@ class KoncertyPage extends React.PureComponent {
   }
 }
 
-export default KoncertyPage;
+export default injectIntl(KoncertyPage);

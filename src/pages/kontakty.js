@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -36,10 +37,12 @@ class KontaktyPage extends React.PureComponent {
   }
 
   render() {
+    const { intl } = this.props;
+
     return (
       <Layout>
         <SEO
-          title="Kontakty"
+          title={intl.formatMessage({ id: "kontakty" })}
           keywords={[
             `kontakty`,
             `system of the down`,
@@ -49,11 +52,15 @@ class KontaktyPage extends React.PureComponent {
         />
         <div className="kontakty-page">
           <div className="content">
-            <h1>Kontakty</h1>
+            <h1>
+              <FormattedMessage id="kontakty" />
+            </h1>
 
             <div className="row">
               <div className="col-1">
-                <h2>Kontaktní osoba</h2>
+                <h2>
+                  <FormattedMessage id="kontaktniOsoba" />
+                </h2>
                 <ul>
                   <li>
                     <strong>Michal Číž</strong>
@@ -103,4 +110,4 @@ class KontaktyPage extends React.PureComponent {
   }
 }
 
-export default KontaktyPage;
+export default injectIntl(KontaktyPage);

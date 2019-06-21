@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { Link } from "gatsby";
+import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
 
 import "./header.scss";
 
@@ -9,6 +9,7 @@ import FacebookIcon from "../images/facebook_square_white.png";
 import YoutubeIcon from "../images/youtube_white.png";
 import BandzoneIcon from "../images/bandzone_white.png";
 import InstagramIcon from "../images/instagram_white.png";
+import Language from "./language";
 
 class Header extends React.PureComponent {
   state = {
@@ -28,8 +29,11 @@ class Header extends React.PureComponent {
   };
 
   render() {
+    const { intl } = this.props;
+
     return (
       <header>
+        <Language />
         <div
           className={this.state.showMenu ? "burger-menu change" : "burger-menu"}
           onClick={this.handleOpenMenu}
@@ -47,50 +51,71 @@ class Header extends React.PureComponent {
         <ul className={this.state.showMenu ? "nav responsive" : "nav"}>
           <li className="nav-item">
             <Link className="nav-link" to="/novinky">
-              <div className="nav-text" data-text="Novinky">
-                Novinky
+              <div
+                className="nav-text"
+                data-text={intl.formatMessage({ id: "novinky" })}
+              >
+                <FormattedMessage id="novinky" />
               </div>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/bio">
-              <div className="nav-text" data-text="Bio">
-                Bio
+              <div
+                className="nav-text"
+                data-text={intl.formatMessage({ id: "bio" })}
+              >
+                <FormattedMessage id="bio" />
               </div>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/stage-plan">
-              <div className="nav-text" data-text="Stage Plán">
-                Stage Plán
+              <div
+                className="nav-text"
+                data-text={intl.formatMessage({ id: "stagePlan" })}
+              >
+                <FormattedMessage id="stagePlan" />
               </div>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/setlist">
-              <div className="nav-text" data-text="Set List">
-                Set List
+              <div
+                className="nav-text"
+                data-text={intl.formatMessage({ id: "setList" })}
+              >
+                <FormattedMessage id="setList" />
               </div>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/galerie">
-              <div className="nav-text" data-text="Galerie">
-                Galerie
+              <div
+                className="nav-text"
+                data-text={intl.formatMessage({ id: "galerie" })}
+              >
+                <FormattedMessage id="galerie" />
               </div>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/koncerty">
-              <div className="nav-text" data-text="Koncerty">
-                Koncerty
+              <div
+                className="nav-text"
+                data-text={intl.formatMessage({ id: "koncerty" })}
+              >
+                <FormattedMessage id="koncerty" />
               </div>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/kontakty">
-              <div className="nav-text" data-text="Kontakty">
-                Kontakty
+              <div
+                className="nav-text"
+                data-text={intl.formatMessage({ id: "kontakty" })}
+              >
+                <FormattedMessage id="kontakty" />
               </div>
             </Link>
           </li>
@@ -157,4 +182,4 @@ Header.defaultProps = {
   siteTitle: ``,
 };
 
-export default Header;
+export default injectIntl(Header);
