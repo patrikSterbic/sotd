@@ -50,16 +50,6 @@ class Header extends React.PureComponent {
 
         <ul className={this.state.showMenu ? "nav responsive" : "nav"}>
           <li className="nav-item">
-            <Link className="nav-link" to="/novinky">
-              <div
-                className="nav-text"
-                data-text={intl.formatMessage({ id: "novinky" })}
-              >
-                <FormattedMessage id="novinky" />
-              </div>
-            </Link>
-          </li>
-          <li className="nav-item">
             <Link className="nav-link" to="/bio">
               <div
                 className="nav-text"
