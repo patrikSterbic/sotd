@@ -45,29 +45,6 @@ class KoncertyPage extends React.PureComponent {
                 <tr>
                   <div className="event-group">
                     <td className="event-club">
-                      <span className="koncerty-date">31.8.2019</span>
-                      <span className="koncerty-place">Kytary In Majetin</span>
-                    </td>
-                    <td className="event-city">Majetín</td>
-                  </div>
-
-                  <td className="event-column">
-                    <a
-                      href="https://www.facebook.com/events/293982631476108/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src={FacebookIcon}
-                        alt="facebook event"
-                        className="koncerty-event-icon"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <div className="event-group">
-                    <td className="event-club">
                       <span className="koncerty-date">14.9.2019</span>
                       <span className="koncerty-place">Bunkr Club</span>
                     </td>
@@ -401,6 +378,29 @@ class KoncertyPage extends React.PureComponent {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="fb-event"
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">31.8.2019</span>
+                      <span className="koncerty-place">Kytary In Majetin</span>
+                    </td>
+                    <td className="event-city">Majetín</td>
+                  </div>
+
+                  <td className="event-column">
+                    <a
+                      href="https://www.facebook.com/events/293982631476108/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
                         src={FacebookIcon}
