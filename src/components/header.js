@@ -50,20 +50,10 @@ class Header extends React.PureComponent {
 
         <ul className={this.state.showMenu ? "nav responsive" : "nav"}>
           <li className="nav-item">
-            <Link className="nav-link" to="/novinky">
-              <div
-                className="nav-text"
-                data-text={intl.formatMessage({ id: "novinky" })}
-              >
-                <FormattedMessage id="novinky" />
-              </div>
-            </Link>
-          </li>
-          <li className="nav-item">
             <Link className="nav-link" to="/bio">
               <div
                 className="nav-text"
-                data-text={intl.formatMessage({ id: "bio" })}
+                aria-label={intl.formatMessage({ id: "bio" })}
               >
                 <FormattedMessage id="bio" />
               </div>
@@ -73,7 +63,7 @@ class Header extends React.PureComponent {
             <Link className="nav-link" to="/stage-plan">
               <div
                 className="nav-text"
-                data-text={intl.formatMessage({ id: "stagePlan" })}
+                aria-label={intl.formatMessage({ id: "stagePlan" })}
               >
                 <FormattedMessage id="stagePlan" />
               </div>
@@ -83,7 +73,7 @@ class Header extends React.PureComponent {
             <Link className="nav-link" to="/setlist">
               <div
                 className="nav-text"
-                data-text={intl.formatMessage({ id: "setList" })}
+                aria-label={intl.formatMessage({ id: "setList" })}
               >
                 <FormattedMessage id="setList" />
               </div>
@@ -93,7 +83,7 @@ class Header extends React.PureComponent {
             <Link className="nav-link" to="/galerie">
               <div
                 className="nav-text"
-                data-text={intl.formatMessage({ id: "galerie" })}
+                aria-label={intl.formatMessage({ id: "galerie" })}
               >
                 <FormattedMessage id="galerie" />
               </div>
@@ -103,7 +93,7 @@ class Header extends React.PureComponent {
             <Link className="nav-link" to="/koncerty">
               <div
                 className="nav-text"
-                data-text={intl.formatMessage({ id: "koncerty" })}
+                aria-label={intl.formatMessage({ id: "koncerty" })}
               >
                 <FormattedMessage id="koncerty" />
               </div>
@@ -113,7 +103,7 @@ class Header extends React.PureComponent {
             <Link className="nav-link" to="/kontakty">
               <div
                 className="nav-text"
-                data-text={intl.formatMessage({ id: "kontakty" })}
+                aria-label={intl.formatMessage({ id: "kontakty" })}
               >
                 <FormattedMessage id="kontakty" />
               </div>

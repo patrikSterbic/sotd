@@ -45,61 +45,6 @@ class KoncertyPage extends React.PureComponent {
                 <tr>
                   <div className="event-group">
                     <td className="event-club">
-                      <span className="koncerty-date">31.8.2019</span>
-                      <span className="koncerty-place">Kytary In Majetin</span>
-                    </td>
-                    <td className="event-city">Majetín</td>
-                  </div>
-
-                  <td className="event-column">
-                    <a
-                      href="https://www.facebook.com/events/293982631476108/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src={FacebookIcon}
-                        alt="facebook event"
-                        className="koncerty-event-icon"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <div className="event-group">
-                    <td className="event-club">
-                      <span className="koncerty-date">14.9.2019</span>
-                      <span className="koncerty-place">Bunkr Club</span>
-                    </td>
-                    <td className="event-city">Vsetín</td>
-                  </div>
-                  <td className="event-column">
-                    <a
-                      title="Předprodej akce"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="smsticket-ibutton"
-                      href="https://www.smsticket.cz/vstupenky/17287-system-of-the-down-tribute-bunkr-club?utm_medium=anchor"
-                    >
-                      SMSTICKET
-                    </a>
-                    <a
-                      href="https://www.facebook.com/events/430268084420722/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="fb-event"
-                    >
-                      <img
-                        src={FacebookIcon}
-                        alt="facebook event"
-                        className="koncerty-event-icon"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <div className="event-group">
-                    <td className="event-club">
                       <span className="koncerty-date">21.9.2019</span>
                       <span className="koncerty-place">Klub Vrátnice</span>
                     </td>
@@ -398,6 +343,52 @@ class KoncertyPage extends React.PureComponent {
                   <td className="event-column">
                     <a
                       href="https://www.facebook.com/events/1264944820345601/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fb-event"
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">31.8.2019</span>
+                      <span className="koncerty-place">Kytary In Majetin</span>
+                    </td>
+                    <td className="event-city">Majetín</td>
+                  </div>
+
+                  <td className="event-column">
+                    <a
+                      href="https://www.facebook.com/events/293982631476108/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">14.9.2019</span>
+                      <span className="koncerty-place">Bunkr Club</span>
+                    </td>
+                    <td className="event-city">Vsetín</td>
+                  </div>
+                  <td className="event-column">
+                    <a
+                      href="https://www.facebook.com/events/430268084420722/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="fb-event"
