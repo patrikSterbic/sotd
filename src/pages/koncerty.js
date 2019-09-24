@@ -42,38 +42,7 @@ class KoncertyPage extends React.PureComponent {
 
             <table className="koncerty-list">
               <tbody>
-                <tr>
-                  <div className="event-group">
-                    <td className="event-club">
-                      <span className="koncerty-date">21.9.2019</span>
-                      <span className="koncerty-place">Klub Vrátnice</span>
-                    </td>
-                    <td className="event-city">Rožnov pod Radhoštěm</td>
-                  </div>
-                  <td className="event-column">
-                    <a
-                      title="Předprodej akce"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="smsticket-ibutton"
-                      href="https://www.smsticket.cz/vstupenky/17339-system-of-the-down-tribute?utm_medium=anchor"
-                    >
-                      SMSTICKET
-                    </a>
-                    <a
-                      href="https://www.facebook.com/events/2946324898741583/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="fb-event"
-                    >
-                      <img
-                        src={FacebookIcon}
-                        alt="facebook event"
-                        className="koncerty-event-icon"
-                      />
-                    </a>
-                  </td>
-                </tr>
+                
                 <tr>
                   <div className="event-group">
                     <td className="event-club">
@@ -389,6 +358,29 @@ class KoncertyPage extends React.PureComponent {
                   <td className="event-column">
                     <a
                       href="https://www.facebook.com/events/430268084420722/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fb-event"
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">21.9.2019</span>
+                      <span className="koncerty-place">Klub Vrátnice</span>
+                    </td>
+                    <td className="event-city">Rožnov pod Radhoštěm</td>
+                  </div>
+                  <td className="event-column">
+                    <a
+                      href="https://www.facebook.com/events/2946324898741583/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="fb-event"

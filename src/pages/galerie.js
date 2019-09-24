@@ -165,6 +165,20 @@ class GaleriePage extends React.PureComponent {
               />
             </div>
           </div>
+          <h2>
+              <FormattedMessage id="Bunkr Club Vsetín" />
+          </h2>
+            <div className="photos">
+              <img
+                onClick={this.openImage}
+                className="photo"
+                src={PhotoOne}
+                alt="First"
+                id="1"
+                height="314" // Ugly Hack
+              />
+              </div>
+
           {this.state.isOpen && (
             <Lightbox
               mainSrc={this.state.currentPath}
