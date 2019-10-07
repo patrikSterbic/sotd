@@ -15,6 +15,18 @@ import PhotoThree from "../images/photos/3.jpg";
 import PhotoFour from "../images/photos/4.jpg";
 import PhotoFive from "../images/photos/5.jpg";
 import PhotoSix from "../images/photos/6.jpg";
+import PhotoSeven from "../images/photos/7.jpg";
+import PhotoEight from "../images/photos/8.jpg";
+import PhotoNine from "../images/photos/9.jpg";
+import PhotoTen from "../images/photos/10.jpg";
+import PhotoEleven from "../images/photos/11.jpg";
+import PhotoTwelve from "../images/photos/12.jpg";
+import PhotoThirteen from "../images/photos/13.jpg";
+import PhotoFourteen from "../images/photos/14.jpg";
+import PhotoFifteen from "../images/photos/15.jpg";
+import PhotoSixteen from "../images/photos/16.jpg";
+import PhotoSeventeen from "../images/photos/17.jpg";
+import PhotoEightteen from "../images/photos/18.jpg";
 
 class GaleriePage extends React.PureComponent {
   state = {
@@ -110,7 +122,6 @@ class GaleriePage extends React.PureComponent {
                 />
               </div>
             </div>
-
             <h2>
               <FormattedMessage id="foto" />
             </h2>
@@ -161,6 +172,112 @@ class GaleriePage extends React.PureComponent {
                 alt="Sixth"
                 onClick={this.openImage}
                 id="6"
+                height="314" // Ugly Hack
+              />
+            </div>
+            <h2>
+              <FormattedMessage id="vsetin" />
+            </h2>
+            <div className="photos-4">
+              <img
+                onClick={this.openImage}
+                className="photo"
+                src={PhotoSeven}
+                alt="Seven"
+                id="7"
+                height="314" // Ugly Hack
+              />
+              <img
+                className="photo"
+                src={PhotoEight}
+                alt="Eight"
+                onClick={this.openImage}
+                id="8"
+                height="314" // Ugly Hack
+              />
+              <img
+                className="photo"
+                src={PhotoNine}
+                alt="Nine"
+                onClick={this.openImage}
+                id="9"
+                height="314" // Ugly Hack
+              />
+              <img
+                className="photo"
+                src={PhotoTen}
+                alt="Ten"
+                onClick={this.openImage}
+                id="10"
+                height="314" // Ugly Hack
+              />
+              <img
+                className="photo"
+                src={PhotoEleven}
+                alt="Eleven"
+                onClick={this.openImage}
+                id="11"
+                height="314" // Ugly Hack
+              />
+              <img
+                className="photo"
+                src={PhotoTwelve}
+                alt="Twelve"
+                onClick={this.openImage}
+                id="12"
+                height="314" // Ugly Hack
+              />
+              <img
+              className="photo"
+              src={PhotoThirteen}
+              alt="Thirteen"
+              onClick={this.openImage}
+              id="13"
+              height="314" // Ugly Hack
+              />
+              <img
+              className="photo"
+              src={PhotoFourteen}
+              alt="Fourteen"
+              onClick={this.openImage}
+              id="14"
+              height="314" // Ugly Hack
+              />
+            </div>
+            <h2>
+              <FormattedMessage id="roznov" />
+            </h2>
+            <div className="photos-4">
+              <img
+                onClick={this.openImage}
+                className="photo"
+                src={PhotoFifteen}
+                alt="Fifteen"
+                id="15"
+                height="314" // Ugly Hack
+              />
+              <img
+                className="photo"
+                src={PhotoSixteen}
+                alt="Sixteen"
+                onClick={this.openImage}
+                id="16"
+                height="314" // Ugly Hack
+              />
+              <img
+                className="photo"
+                src={PhotoSeventeen}
+                alt="Seventeen"
+                onClick={this.openImage}
+                id="17"
+                height="314" // Ugly Hack
+              />
+              <img
+                className="photo"
+                src={PhotoEightteen}
+                alt="Eighteen"
+                onClick={this.openImage}
+                id="18"
                 height="314" // Ugly Hack
               />
             </div>
