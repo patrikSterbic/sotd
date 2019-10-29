@@ -4,9 +4,21 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
-      - run: sudo apt install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
-      - run: npm install
-      - run: npm run build
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+      - run:
+          name: Build Dependencies
+          command: yarn build
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
       - run: cp .htaccess public/.htaccess
       - run: node .circleci/deploy.js
       - run: echo "WE'RE ONLINE"
