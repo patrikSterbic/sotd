@@ -42,40 +42,7 @@ class KoncertyPage extends React.PureComponent {
 
             <table className="koncerty-list">
               <tbody>
-                <tr>
-                  <div className="event-group">
-                    <td className="event-club">
-                      <span className="koncerty-date">26.10.2019</span>
-                      <span className="koncerty-place">
-                        15 Minut Music club
-                      </span>
-                    </td>
-                    <td className="event-city">Olomouc</td>
-                  </div>
-                  <td className="event-column">
-                    <a
-                      title="Předprodej akce"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="smsticket-ibutton"
-                      href="https://www.smsticket.cz/vstupenky/17342-system-of-the-down-tribute?utm_medium=anchor"
-                    >
-                      SMSTICKET
-                    </a>
-                    <a
-                      href="https://www.facebook.com/events/2237866436462898/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="fb-event"
-                    >
-                      <img
-                        src={FacebookIcon}
-                        alt="facebook event"
-                        className="koncerty-event-icon"
-                      />
-                    </a>
-                  </td>
-                </tr>
+                
                 <tr>
                   <div className="event-group">
                     <td className="event-club">
@@ -372,6 +339,31 @@ class KoncertyPage extends React.PureComponent {
                   <td className="event-column">
                     <a
                       href="https://www.facebook.com/events/2403688729874487/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fb-event"
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">26.10.2019</span>
+                      <span className="koncerty-place">
+                        15 Minut Music club
+                      </span>
+                    </td>
+                    <td className="event-city">Olomouc</td>
+                  </div>
+                  <td className="event-column">
+                    <a
+                      href="https://www.facebook.com/events/2237866436462898/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="fb-event"
