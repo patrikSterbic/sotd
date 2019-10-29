@@ -4,6 +4,7 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
+      - run: rm -R ~/.node-gyp
       - run: npm install
       - run: npm run build
       - run: cp .htaccess public/.htaccess
