@@ -4,6 +4,7 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
+      - run: sudo apt install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
       - run: npm install
       - run: npm run build
       - run: cp .htaccess public/.htaccess
