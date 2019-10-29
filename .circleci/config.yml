@@ -1,12 +1,15 @@
-version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:latest
+      - image: maloubobola/circleci-gcloud-node:latest
     steps:
       - checkout
-      - run: npm install
-      - run: npm run build
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - run:
+          name: Build Dependencies
+          command: yarn build
       - run: cp .htaccess public/.htaccess
       - run: node .circleci/deploy.js
       - run: echo "WE'RE ONLINE"
