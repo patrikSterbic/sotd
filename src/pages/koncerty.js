@@ -42,71 +42,6 @@ class KoncertyPage extends React.PureComponent {
 
             <table className="koncerty-list">
               <tbody>
-                
-                <tr>
-                  <div className="event-group">
-                    <td className="event-club">
-                      <span className="koncerty-date">9.11.2019</span>
-                      <span className="koncerty-place">Klub Slady</span>
-                    </td>
-                    <td className="event-city">Kroměříž</td>
-                  </div>
-                  <td className="event-column">
-                    <a
-                      title="Předprodej akce"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="smsticket-ibutton"
-                      href="https://www.smsticket.cz/vstupenky/17366-system-of-the-down-tribute?utm_medium=anchor"
-                    >
-                      SMSTICKET
-                    </a>
-                    <a
-                      href="https://www.facebook.com/events/1146915855432877/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="fb-event"
-                    >
-                      <img
-                        src={FacebookIcon}
-                        alt="facebook event"
-                        className="koncerty-event-icon"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <div className="event-group">
-                    <td className="event-club">
-                      <span className="koncerty-date">16.11.2019</span>
-                      <span className="koncerty-place">M13 Klub</span>
-                    </td>
-                    <td className="event-city">Brno</td>
-                  </div>
-                  <td className="event-column">
-                    <a
-                      title="Předprodej akce"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="smsticket-ibutton"
-                      href="https://www.smsticket.cz/vstupenky/17343-system-of-the-down-tribute?utm_medium=anchor"
-                    >
-                      SMSTICKET
-                    </a>
-                    <a
-                      href="https://www.facebook.com/events/532808890588180/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="fb-event"
-                    >
-                      <img
-                        src={FacebookIcon}
-                        alt="facebook event"
-                        className="koncerty-event-icon"
-                      />
-                    </a>
-                  </td>
-                </tr>
                 <tr>
                   <div className="event-group">
                     <td className="event-club">
@@ -364,6 +299,52 @@ class KoncertyPage extends React.PureComponent {
                   <td className="event-column">
                     <a
                       href="https://www.facebook.com/events/2237866436462898/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fb-event"
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">9.11.2019</span>
+                      <span className="koncerty-place">Klub Slady</span>
+                    </td>
+                    <td className="event-city">Kroměříž</td>
+                  </div>
+                  <td className="event-column">
+                    <a
+                      href="https://www.facebook.com/events/1146915855432877/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fb-event"
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">16.11.2019</span>
+                      <span className="koncerty-place">M13 Klub</span>
+                    </td>
+                    <td className="event-city">Brno</td>
+                  </div>
+                  <td className="event-column">
+                    <a
+                      href="https://www.facebook.com/events/532808890588180/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="fb-event"
