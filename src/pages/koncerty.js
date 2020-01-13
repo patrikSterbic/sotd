@@ -42,102 +42,7 @@ class KoncertyPage extends React.PureComponent {
 
             <table className="koncerty-list">
               <tbody>
-                <tr>
-                  <div className="event-group">
-                    <td className="event-club">
-                      <span className="koncerty-date">23.11.2019</span>
-                      <span className="koncerty-place">Club Nautilus</span>
-                    </td>
-                    <td className="event-city">Hodonín</td>
-                  </div>
-                  <td className="event-column">
-                    <a
-                      title="Předprodej akce"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="smsticket-ibutton"
-                      href="https://www.smsticket.cz/vstupenky/17344-system-of-the-down-tribute?utm_medium=anchor"
-                    >
-                      SMSTICKET
-                    </a>
-                    <a
-                      href="https://www.facebook.com/events/874181499599015/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="fb-event"
-                    >
-                      <img
-                        src={FacebookIcon}
-                        alt="facebook event"
-                        className="koncerty-event-icon"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <div className="event-group">
-                    <td className="event-club">
-                      <span className="koncerty-date">14.12.2019</span>
-                      <span className="koncerty-place">Bamboo Club</span>
-                    </td>
-                    <td className="event-city">Zlín</td>
-                  </div>
-                  <td className="event-column">
-                    <a
-                      title="Předprodej akce"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="smsticket-ibutton"
-                      href="https://www.smsticket.cz/vstupenky/17345-system-of-the-down-tribute?utm_medium=anchor"
-                    >
-                      SMSTICKET
-                    </a>
-                    <a
-                      href="https://www.facebook.com/events/712214882583447/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="fb-event"
-                    >
-                      <img
-                        src={FacebookIcon}
-                        alt="facebook event"
-                        className="koncerty-event-icon"
-                      />
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <div className="event-group">
-                    <td className="event-club">
-                      <span className="koncerty-date">28.12.2019</span>
-                      <span className="koncerty-place">Klub MÍR</span>
-                    </td>
-                    <td className="event-city">Uherské Hradiště</td>
-                  </div>
-                  <td className="event-column">
-                    <a
-                      title="Předprodej akce"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="smsticket-ibutton"
-                      href="https://www.smsticket.cz/vstupenky/17346-system-of-the-down-tribute?utm_medium=anchor"
-                    >
-                      SMSTICKET
-                    </a>
-                    <a
-                      href="https://www.facebook.com/events/2308860679355564/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="fb-event"
-                    >
-                      <img
-                        src={FacebookIcon}
-                        alt="facebook event"
-                        className="koncerty-event-icon"
-                      />
-                    </a>
-                  </td>
-                </tr>
+               
               </tbody>
             </table>
 
@@ -345,6 +250,84 @@ class KoncertyPage extends React.PureComponent {
                   <td className="event-column">
                     <a
                       href="https://www.facebook.com/events/532808890588180/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fb-event"
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">23.11.2019</span>
+                      <span className="koncerty-place">Club Nautilus</span>
+                    </td>
+                    <td className="event-city">Hodonín</td>
+                  </div>
+                  <td className="event-column">
+                    <a
+                      href="https://www.facebook.com/events/874181499599015/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fb-event"
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">14.12.2019</span>
+                      <span className="koncerty-place">Bamboo Club</span>
+                    </td>
+                    <td className="event-city">Zlín</td>
+                  </div>
+                  <td className="event-column">
+                    {/* <a
+                      title="Předprodej akce"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="smsticket-ibutton"
+                      href="https://www.smsticket.cz/vstupenky/17345-system-of-the-down-tribute?utm_medium=anchor"
+                    >
+                      SMSTICKET
+                    </a> */}
+                    <a
+                      href="https://www.facebook.com/events/712214882583447/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fb-event"
+                    >
+                      <img
+                        src={FacebookIcon}
+                        alt="facebook event"
+                        className="koncerty-event-icon"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <div className="event-group">
+                    <td className="event-club">
+                      <span className="koncerty-date">28.12.2019</span>
+                      <span className="koncerty-place">Klub MÍR</span>
+                    </td>
+                    <td className="event-city">Uherské Hradiště</td>
+                  </div>
+                  <td className="event-column">
+                    <a
+                      href="https://www.facebook.com/events/2308860679355564/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="fb-event"

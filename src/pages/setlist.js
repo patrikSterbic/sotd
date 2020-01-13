@@ -152,9 +152,9 @@ class SetListPage extends React.PureComponent {
                   <li>Roulette</li>
                   <li>
                     Highway Song
-                    <span className="new-song">
+                    {/* <span className="new-song">
                       <FormattedMessage id="novinka" />
-                    </span>
+                    </span> */}
                   </li>
                 </ul>
               </div>
@@ -176,9 +176,9 @@ class SetListPage extends React.PureComponent {
                   <li>Lost in Hollywood</li>
                   <li>
                     Cigaro
-                    <span className="new-song">
+                    {/* <span className="new-song">
                       <FormattedMessage id="novinka" />
-                    </span>
+                    </span> */}
                   </li>
                 </ul>
               </div>
